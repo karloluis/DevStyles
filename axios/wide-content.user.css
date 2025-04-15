@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name           Axios Docs
+@namespace      github.com/karloluis/DevStyles
+@version        0.0.1
+@description    Helps with wide monitors by centering navigation tabs.
+@preprocessor   stylus
+@author         karloluis
+@updateURL      https://github.com/karloluis/DevStyles/raw/refs/heads/main/axios/wide-content.user.css
+@homepageURL    https://github.com/github.com/karloluis/DevStyles
+==/UserStyle== */
+@-moz-document url-prefix("https://axios-http.com/docs/") {
+main {
+    grid-template-columns: 1fr clamp(300px, calc(100vw - var(--sidebar-width)), 50vw) 1fr;
+}
+}
